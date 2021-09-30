@@ -1,0 +1,83 @@
+.products {
+    padding: 72px 0;
+}
+
+.products .inner {
+    padding: 0;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.products .inner .tit {
+    font-size: 45px;
+    color: #303030;
+    line-height: 1.2em;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 70px;
+}
+
+.products .inner .tit span {
+    font-size: 45px;
+    display: inline;
+    line-height: 1.2em;
+    font-weight: normal;
+}
+
+.products .tab_pd {
+    margin-bottom: 90px;
+}
+
+.products .tab_pd ul {
+    display: flex;
+    flex-wrap: nowrap;
+    border: none;
+    width: 806px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.products .tab_pd li {
+    width: auto;
+    padding: 0;
+    color: #303030;
+    background: none;
+    font-size: 18px;
+    border: none;
+}
+
+.products .tab_pd li.on {
+    background: none;
+    font-weight: 500;
+    color: #7d4698;
+}
+
+.products .pannel_pd_pc {
+    height: 340px;
+    overflow: hidden;
+}
+
+.products .pannel_pd_pc > div {
+    display: none;
+}
+
+.products .pannel_pd_pc > div.on {
+    display: block;
+}
+
+.products .pannel_pd_pc .slicklist {
+    width: 280px;
+    height: 320px;
+    border: 1px solid rgba(125, 70, 152, .3);
+    text-align: center;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.products .pannel_pd_pc .slicklist img {
+    overflow: hidden;
+    width: 280px;
+    height: 226px;
+    padding-top: 20px;
+}

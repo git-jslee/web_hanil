@@ -1,0 +1,23 @@
+.client {
+    text-align: left;
+    padding: 74px 0;
+    background: #f2f2fe;
+}
+
+.client .txt_client {
+    color: #606060;
+    font-size: 18px;
+    margin-bottom: 84px;
+}
+
+.client .list_client {
+    display: flex;
+    justify-content: space-between;
+    opacity: .75;
+}
+
+.client .list_client li:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+

@@ -1,0 +1,53 @@
+.tab_menu.tab5 ul {
+    width: 877px;
+}
+
+.tab_menu ul {
+    border-right: 1px solid #d0cfcf;
+    margin: 0 auto;
+}
+
+.sub_content {
+    text-align: center;
+}
+
+.pd_wrap ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pd_wrap li {
+    width: calc(100% / 3 - 30px);
+    margin-bottom: 46px;
+}
+
+.pd_wrap .photo {
+    overflow: hidden;
+    border: 1px solid #ececec;
+    margin-bottom: 26px;
+}
+
+.pd_wrap .photo img {
+    width: 100%;
+    height: auto;
+    max-width: 377px;
+}
+
+.pd_wrap .text {
+    color: #606060;
+}
+
+.pd_wrap .text .name {
+    text-align: left;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 1.1em;
+}
+
+.pd_wrap .text .use {
+    font-size: 18px;
+    text-align: right;
+}

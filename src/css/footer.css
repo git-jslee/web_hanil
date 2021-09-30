@@ -1,0 +1,51 @@
+footer {
+    background: linear-gradient(to bottom, #fff 154px, #7d4698 155px);
+    width: 100%;
+    border-top: 1px solid #e3e2e4;
+    padding-top: 34px;
+    text-align: center;
+}
+
+footer .logo_footer {
+    color: #7d4698;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer address {
+    color: #303030;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    margin-bottom: 11px;
+}
+
+footer .number {
+    font-size: 14px;
+    margin-bottom: 32px;
+    font-weight: 300;
+}
+
+footer .number p {
+    color: #303030;
+    display: inline-block;
+}
+
+footer .number p:first-child {
+    margin-right: 14px;
+}
+
+footer .number p span {
+    color: #7d4698;
+}
+
+footer .copyright {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    padding: 15px;
+    text-transform: uppercase;
+}
+

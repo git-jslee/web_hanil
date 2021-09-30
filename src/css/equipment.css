@@ -1,0 +1,75 @@
+.tit {
+    font-size: 45px;
+    color: #303030;
+    line-height: 1.2em;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 70px;
+}
+
+.tit span {
+    font-weight: normal;
+    font-size: 45px;
+    display: inline;
+    line-height: 1.2em;
+}
+
+.equipment .tab_eq {
+    margin-bottom: 4vw;
+}
+
+.equipment .tab_eq ul {
+    display: flex;
+    flex-wrap: nowrap;
+    border: none;
+    justify-content: space-between;
+    width: 272px;
+    margin: 0 auto;
+}
+
+.equipment .tab_eq li {
+    width: auto;
+    text-align: center;
+    padding: 0;
+    color: #7d4698;
+    background: #e4e4f0;
+    font-size: 18px;
+    font-weight: 300;
+    border: 1px solid #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.equipment .tab_eq li.on {
+    background: none;
+    font-weight: 500;
+    color: #7d4698;
+}
+
+.equipment .pannel_eq_pc {
+    height: 340px;
+    overflow: hidden;
+}
+
+.equipment .pannel_eq_pc .img {
+    overflow: hidden;
+    width: 280px;
+    height: 320px;
+}
+
+.equipment .pannel_eq_pc .img img{
+    width: auto;
+    height: 100%;
+}
+
+.equipment .pc {
+    display: block;
+}
+
+/* .equipment .pannel_eq_pc > div {
+    display: none;
+} */
+
+.equipment .pannel_eq_pc > div.on {
+    display: block;
+}

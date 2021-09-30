@@ -1,0 +1,255 @@
+.inner {
+    padding: 0;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.area_sub_title {
+    margin-top: 100px;
+    transition: all .3s;
+    text-align: center;
+    color: #606060;
+    padding: 106px 0;
+    background: url(../images/bg_company_subtitle.png) no-repeat center;
+    background-size: cover;
+}
+
+.area_sub_title .sub_location {
+    display: flex;
+    justify-content: center;
+}
+
+.area_sub_title .sub_title {
+    font-size: 32px;
+    margin-bottom: 28px;
+}
+
+.area_sub_title .sub_location .home {
+    background: url(../images/icon_location_home.svg) no-repeat left 2px / 17px 14px;
+}
+
+.area_sub_title .sub_location p:not(.dep2):after {
+    display: inline-block;
+    content: ">";
+    line-height: 1.2em;
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+.area_sub_title .sub_location p a {
+    font-weight: 500;
+    color: #606060;
+    font-size: 15px;
+    line-height: 1.2em;
+}
+
+.area_sub_title .sub_location .home a {
+    padding-left: 30px;
+}
+
+.area_sub_title .sub_location p.dep2 {
+    font-size: 15px;
+    margin-bottom: 28px;
+    font-weight: 500;
+    color: #606060;
+}
+
+.tab_menu {
+    margin-top: -20px;
+}
+
+.tab_menu ul {
+    border-right: 1px solid #d0cfcf;
+    margin: 0 auto;
+}
+
+.tab_menu.tab4 ul {
+    width: 702px;
+}
+
+.tab_menu li {
+    border: 1px solid #d0cfcf;
+    background: #fff;
+    transition: all .3s;
+    border-right: none;
+    float: left;
+}
+
+.tab_menu li span {
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: #606060;
+    font-weight: 300;
+    width: 174px;
+}
+
+
+.tab_menu li a {
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: #606060;
+    font-weight: 300;
+    width: 174px;
+}
+
+.tab_menu li.on a {
+    color: #fff;
+    font-weight: 500;
+}
+
+.tab_menu li.on {
+    background: #e84048;
+    border: 1px solid #e84048;
+}
+
+.sub_content {text-align: center;}
+
+.overview {
+    background: url(../images/bg_company_back.png) no-repeat right bottom;
+    padding-bottom: 0;
+}
+
+.tit_content {
+    font-size: 35px;
+    color: #303030;
+    line-height: 1.2em;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+
+.overview .intro_company {
+    color: #606060;
+    margin-bottom: 80px;
+}
+
+.overview .intro_company h4 {
+    font-size: 35px;
+    margin-bottom: 22px;
+    font-weight: 400;
+}
+
+.overview .intro_company p {
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 1.5em;
+}
+
+.overview table {
+    border-top: 2px solid #7d4698;
+    width: 790px;
+    border-bottom: 2px solid #e6e4e4;
+    font-size: 17px;
+    line-height: 1.2em;
+    border-collapse: collapse;
+    overflow: hidden;
+    margin: 0 auto 100px;
+}
+
+.overview table caption {
+    font-size: 28px;
+    color: #303030;
+    font-weight: 300;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+}
+
+.overview table caption strong {
+    font-weight: 500;
+}
+
+.overview table tr th {
+    border-bottom: 1px solid #dedede;
+    background: #f8f6fa;
+    font-weight: 500;
+    width: 182px;
+}
+
+.overview table tr th p {
+    display: none;
+}
+
+.overview table tr th ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.overview table tr td {
+    border-bottom: 1px solid #dedede;
+    padding: 14px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.overview table tr td br {
+    display: none;
+}
+
+.visual_company_bottom {
+    display: flex;
+    height: 484px;
+}
+
+.visual_company_bottom .left {
+    width: 50%;
+    border-radius: 0 80px 0 0;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.visual_company_bottom .left .img_company {
+    background: url(../images/visual_company01.png) no-repeat;
+    background-size: auto 100%;
+    height: 484px;
+    opacity: .3;
+}
+
+.visual_company_bottom .left .company_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 375px;
+    height: auto;
+}
+
+.visual_company_bottom .right {
+    width: 50%;
+    border-radius: 80px 0 0 0;
+    background: #7d4698;
+    overflow: hidden;
+}
+
+.visual_company_bottom .right ul {
+    width: 100%;
+    height: 484px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.visual_company_bottom .right li {
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.visual_company_bottom .right li img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    opacity: .7;
+    transition: all 1s;
+}
+
+.visual_company_bottom .right li:hover img{transform: scale(1.2); opacity: 1;}

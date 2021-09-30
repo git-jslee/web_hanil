@@ -1,0 +1,65 @@
+.company{background: #e4e4f0;}
+
+.company{background-image: url(../images/bg_index_company.png); padding: 70px 0; background-size: cover; background-color: none;}
+.company .inner{display: flex; justify-content: space-between;}
+
+.tit_company h4 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 45px;
+    color: #303030;
+    font-weight: bold;
+    line-height: .9em;
+    margin-bottom: 18px;
+    transition: all .3s;
+}
+
+.tit_company h5 {
+    color: #707070;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5em;
+    transition: all .3s;
+}
+
+.btn_company_more {
+    width: 181px;
+    margin-bottom: 0;
+    position: absolute;
+    top: 220px;
+    left: 126px;
+    text-align: center;
+    border: 1px solid #a7a7cd;
+    transition: all .3s;
+}
+
+.btn_company_more a {
+    display: block;
+    color: #707070;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 14px 0;
+}
+
+.list_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list_wrap .list_company {
+    background: #fff;
+    justify-content: center;
+    width: 240px;
+    padding: 47px 0;
+    display: block;
+    text-align: center;
+}
+
+.list_wrap .list_company:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.list_wrap .list_company:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 34px;
+}
+

@@ -1,0 +1,81 @@
+#bo_btn_top {
+    margin: 10px 0;
+}
+
+#bo_gall #gall_ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    zoom: 1;
+}
+
+#bo_gall .gall_li {
+    box-sizing: border-box;
+    /* border: 2px solid transparent; */
+    width: 376px;
+    height: 432px;
+    /* overflow: hidden; */
+    margin-bottom: 54px;
+    position: relative;
+}
+
+#bo_gall .gall_li::before {
+    width: 0;
+    height: 2px;
+    top: 0;
+    left: 0;
+}
+
+#bo_gall .gall_li a {
+    position: relative;
+    display: block;
+}
+
+#bo_gall .gall_li a::before {
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#bo_gall .gall_li a::before, #bo_gall .gall_li a::after {
+    display: block;
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    background: #e84048;
+    transition: all .3s;
+}
+
+#bo_gall .gall_box {
+    position: relative;
+    margin: 0 0 50px 0;
+    border-radius: 0 0 2px 2px;
+}
+
+#bo_gall .gall_li .gall_chk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    z-index: 1;
+}
+
+.msg_sound_only, .sound_only {
+    display: inline-block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0;
+    line-height: 0;
+    border: 0 !important;
+    overflow: hidden !important;
+}

@@ -1,0 +1,106 @@
+
+/* h2 삭제 */
+h2{display: none;}
+
+header {
+    width: 100%;
+    /* height: 100px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 400;
+    transition: all .3s;
+    height: 165px;
+    z-index: 601;
+}
+
+
+/* 스크롤 */
+header.scOn {height: 69px; background: #7d4698;}
+/* 서브페이지 헤더 설정 */
+header.sub {height: 168px; background: #642e7f; transition: all .3s;}
+header.on{background: #7d4698;}
+
+/* 1024 로고 */
+.logo_header {padding: 64px 0 0; transition: all .3s;}
+header.scOn .logo_header{padding: 13px 0;}
+.logo_header a{
+    display: block; 
+    background: url(../images/logo.svg) no-repeat; 
+    width: 212px; height: 72px; 
+    text-indent: -9999px; 
+    transition: all .3s;
+}
+header.scOn .logo_header a{width: 122px; height: 43px;}
+
+
+
+/* 수정 */
+.gnb > ul{display: flex; justify-content: space-between;}
+.gnb > ul > div{
+    width: calc(100% / 5 - 6px); 
+    position: relative;
+}
+
+header.sub .gnb .lnb{position: absolute; top: 104px; left: 50%; transform: translateX(-50%);}
+.gnb .lnb li{border-bottom: 1px solid #50355e; background: #7d4698; transition: all .3s; width: 140px;}
+.gnb .lnb li:last-child{border-bottom: none;}
+.gnb .lnb li:hover{background: #e84048;}
+.gnb .lnb li a{color: #fff; font-size: 14px; font-weight: 400; text-align: center; display: block; padding: 14px 0;}
+
+
+/* 모바일용 삭제후 PC용 불러옴 */
+.pc{display: block;}
+
+/* 1024 이너 */
+.inner{padding: 0; width: 1200px; margin: 0 auto; position: relative;}
+
+
+/* 1024 메인메뉴 */
+.gnb,
+header.sub .gnb{width: 668px; position: absolute; top: 60px; left: 352px; transition: all .3s;}
+header.scOn .gnb{left: 266px; top: 0;}
+
+.gnb .dep1{z-index: 100;}
+.gnb .dep1 a,
+header.sub .gnb .dep1 a{display: block; text-align: center; padding: 44px 0; font-size: 17px; color: #fff; font-weight: bold;}
+header.scOn .gnb .dep1 a{padding: 26px 0;}
+.gnb .lnb,
+
+header.sub .gnb .lnb2{display: block; }
+header.scOn .gnb .lnb{top: 66px;}
+.gnb .lnb::before{display: block; content: ""; width: 39px; height: 3px; background: #fff; margin: 0 auto;}
+.gnb .lnb ul{}
+
+
+/* 1024 유틸   언어선택&햄버거버튼*/
+header.sub .utill{position: absolute; top: 94px; right: 0; display: flex; transition: all .3s;}
+header.scOn .utill{top: 22px;}
+
+/* 1024 유틸 */
+.utill,
+header.sub .utill{position: absolute; top: 94px; right: 0; display: flex; transition: all .3s;}
+header.scOn .utill{top: 22px;}
+
+/* 1024 언어선택 */
+.utill .lang{margin-right: 29px; margin-top: 8px;}
+.utill .lang ul{display: flex;}
+.utill .lang ul li{margin-right: 13px;}
+.utill .lang ul li.on{border-bottom: 2px solid #e84048;}
+.utill .lang ul li a{font-family: 'Titillium Web', sans-serif; color: #fff; font-size: 13px; font-weight: bold;}
+
+/* 1024 사이트맵버튼 */
+.utill .btn_siteMap{}
+.utill .btn_siteMap div{display: block; width: 25px; height: 22px; padding-top: 15px;}
+.utill .btn_siteMap span{display: block; background: #fff; text-indent: -9999px; width: 25px; height: 4px; border-radius: 5px; position: relative; transition: all .3s;}
+.utill .btn_siteMap span::before,
+.utill .btn_siteMap span::after{display: block; content: ""; background: #fff; width: 25px; height: 4px; border-radius: 5px; position: absolute; left: 0; transition: all .3s;}
+.utill .btn_siteMap span::before{top: -10px;}
+.utill .btn_siteMap span::after{bottom: -10px;}
+/* 1024 사이트맵버튼 닫기 */
+.utill .btn_siteMap.on span{background: transparent;}
+.utill .btn_siteMap.on span::before{transform: rotate(45deg); top: 0;}
+.utill .btn_siteMap.on span::after{transform: rotate(-45deg); bottom: 0;}
+
+
+

@@ -1,0 +1,122 @@
+.history {
+    overflow: hidden;
+}
+
+.history .timeline {
+    position: relative;
+}
+
+.history .timeline .year_wrap {
+    margin-bottom: 22px;
+}
+
+.history .timeline .year_section {
+    width: 107px;
+    height: 107px;
+    border-radius: 50%;
+    background: #7d4698;
+    color: #fff;
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 28px;
+    line-height: 1em;
+}
+
+.history .timeline .year_section::after {
+    display: block;
+    content: "";
+    width: 2px;
+    background: #7d4698;
+    margin: 0 auto;
+}
+
+.history .timeline ._1910 .year_section::after {
+    height: 857px;
+}
+
+.history .timeline .year._2021, .history .timeline .year._2019, .history .timeline .year._2007 {
+    margin-top: 98px;
+}
+
+.history .timeline .year {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.history .timeline .year.left {
+    text-align: right;
+    margin-right: 50%;
+}
+
+.history .timeline .year .text {
+    width: 70%;
+    word-break: keep-all;
+}
+
+.history .timeline .year .text p {
+    color: #606060;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+}
+
+.history .timeline .year .text p strong {
+    display: block;
+}
+
+.history .timeline .year.left .text {
+    margin-right: 60px;
+    width: 70%;
+    word-break: keep-all;
+}
+
+.history .timeline .year .text h4 {
+    color: #303030;
+    font-weight: bold;
+    font-size: 23px;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.2em;
+    margin-bottom: 13px;
+}
+
+.history .timeline .year .indicator {
+    width: 10px;
+    height: 10px;
+    border: 6px solid #fff;
+    margin-top: 3px;
+    border-radius: 50%;
+    background: #7d4698;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.history .timeline .year .indicator::before {
+    display: block;
+    content: "";
+    width: 51px;
+    height: 2px;
+    background: #7d4698;
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.history .timeline .year.left .indicator {
+    margin-right: -11px;
+}
+
+.history .timeline .year.right {
+    text-align: left;
+    margin-left: 50%;
+    flex-direction: row-reverse;
+}
+
+.history .timeline .year.right .text {
+    margin-left: 60px;
+}
+
