@@ -1,41 +1,43 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import DropdownList from './DropdownList'
+import DropdownList from './DropdownList';
 
 function DropdownForm({ name, linkto, menuLists }) {
-    const [dropdown, setDropdown] = useState(false);
-        
-    const onMouseEnter = () => {
-        if(window.innerWidth < 960) {
-            setDropdown(false)
-        } else {
-            setDropdown(true)
-        }
+  const [dropdown, setDropdown] = useState(false);
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
     }
+  };
 
-    const onMouseLeave = () => {
-        if(window.innerWidth < 960) {
-            setDropdown(false)
-        } else {
-            setDropdown(false)
-        }
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
     }
+  };
 
-    // console.log('#2', menuLists)
+  const onClick = () => {
+    setDropdown(false);
+  };
 
-    return (
-        <div className='dep1' 
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-            >
-            <Link to={linkto} >
-                {name}
-            </Link>
-            {dropdown && <DropdownList menuLists={menuLists} />}
-        </div>
-    )
+  // console.log('#2', menuLists)
+
+  return (
+    <div
+      className="dep1"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <Link to={linkto}>{name}</Link>
+      {dropdown && <DropdownList menuLists={menuLists} onClick={onClick} />}
+    </div>
+  );
 }
 
-
-export default DropdownForm
+export default DropdownForm;
