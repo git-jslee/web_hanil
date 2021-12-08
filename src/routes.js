@@ -51,7 +51,7 @@ export default [
   {
     path: '/',
     issub: true,
-    exact: false,
+
     snbindex: '4',
     component: Error,
   },

@@ -4,7 +4,7 @@ import CompanyOverviewForm from '../components/CompanyOverviewForm';
 import CompanyHistoryForm from '../components/CompanyHistoryForm';
 import CompanyOrganizaionForm from '../components/CompanyOrganizationForm';
 
-const Company = ({ selected, onClick }) => {
+const Company = ({ selected, onClick, match }) => {
   useEffect(() => {
     onClick({ name: 'overview', title: '회사개요' });
     console.log('==>', selected);
